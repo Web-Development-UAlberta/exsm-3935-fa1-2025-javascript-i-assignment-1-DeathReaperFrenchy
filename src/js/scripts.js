@@ -17,11 +17,10 @@ async function main() {
 async function main() {
   const prompt = "Please enter Your First Name: ";
   let firstName = await input(prompt);
-    const prompt2 = "Please enter Your Last Name: ";
-    let lastName = await input(prompt2);
-      let myVar = firstName + " " + lastName;
-  let fullName = myVar;
-  fullName = fullName.replace("o", "a")
+  const prompt2 = "Please enter Your Last Name: ";
+  let lastName = await input(prompt2);
+  let myVar = (firstName + " " + lastName);
+  const fullName = myVar;
           const prompt3 = "Please enter a number larger than 10: ";
           let number = await input(prompt3);
             const prompt4 = "Please enter a number smaller than 10: ";
@@ -31,8 +30,7 @@ async function main() {
               number2 = await input(prompt4);
               number3 = number / number2;
               }
-                
-                  output("Hello, " + fullName + "!"
+                  output("Hello, " + fullName.replace('o' , 'a') + "!"
                   + " The result of " + number + " divided by " + number2 + " is " + (number / number2)
                   );
   
